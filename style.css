@@ -1,0 +1,29 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logNav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/disney-plus-logo-white-update.f384bde4d5a7f1f455e2dc7d8d4348ae.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 38px;
+  min-width: 68px;
+}
+
