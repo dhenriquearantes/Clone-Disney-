@@ -25,5 +25,18 @@ header {
   background-size: contain;
   min-height: 38px;
   min-width: 68px;
+  padding-right: 24px;
 }
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a {
+  color: white;
+  
+}
+
 
