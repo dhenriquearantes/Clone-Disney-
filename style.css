@@ -1,4 +1,4 @@
-:root {
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,29 +14,50 @@ header {
   align-items: center;
 }
 
-.logNav {
+
+.menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
 }
 
 .logo {
-  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/disney-plus-logo-white-update.f384bde4d5a7f1f455e2dc7d8d4348ae.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 38px;
-  min-width: 68px;
-  padding-right: 24px;
+  width: 86px;
+  height: 48px;
 }
 
 ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style: none;
 }
 
-a {
+li {
   color: white;
   
 }
 
+ a {
+  padding: 16px;
+  margin: 18px;
+  color: white;
+  text-decoration: none;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.nav-itens img {
+  width: 24px;
+  height: 20px;
+}
+
+
+.user  img{
+  width: 48px;
+  height: 48px;
+}
 
