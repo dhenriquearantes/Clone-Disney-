@@ -1,10 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: #000;
+  background-image: url("imgs/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Sen", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -12,14 +19,21 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 10px;
 }
 
+main {
+  width: 100%;
+
+}
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 36px;
+  width: 100%;
 }
 
 .logo {
@@ -27,27 +41,32 @@ header {
   height: 48px;
 }
 
-ul {
+.menu ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  gap: 25px;
 }
 
-li {
+.menu li {
   color: white;
   
 }
 
- a {
-  padding: 16px;
-  margin: 18px;
+ .nav-itens a {
+  padding: 0 36PX;
   color: white;
   text-decoration: none;
-  font-family: "Sen", sans-serif;
   font-weight: bold;
   display: flex;
   align-items: center;
+
+  font-size: 13px;
+  letter-spacing: 1.42px;
+  line-height: 1.07px;
+
+  gap: 5px;
 }
 
 .nav-itens img {
@@ -56,8 +75,91 @@ li {
 }
 
 
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .user  img{
   width: 48px;
   height: 48px;
 }
 
+.user a {
+  text-decoration: none;
+  margin: 0 16px;
+  color: white;
+}
+
+.page {
+  max-width: 90vw;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.recommended-now img {
+  width: 100%;
+  box-shadow: 0 1.5em 1.5em -0.8em #000
+}
+
+.logos {
+  margin-top: 4vh ;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.logoBox{
+  width: 25vw;
+  background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+  border-radius: 8px;
+  box-shadow: 0 1.5em 1.5em 0em #000
+}
+
+.news {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.news p {
+  color: white;
+}
+
+.filmes {
+  margin-top: 4vh ;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.logoBox img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.logoBox:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+@media (max-width:1100px) {
+  .response {
+    display: none;
+  }
+  .dotted {
+    display: flex;
+  }
+}
