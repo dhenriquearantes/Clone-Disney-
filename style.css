@@ -39,6 +39,7 @@ header {
 .logo {
   height: 3.2rem;
   width: 5.9rem;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -91,6 +92,7 @@ header {
 .user  img{
   width: 48px;
   height: 48px;
+  cursor: pointer;
 }
 
 .user a {
@@ -101,37 +103,58 @@ header {
 
 /* Corpo da página */
 
-main {
-  padding: 0 0 0 20px;
-}
-
 .page {
   max-width: 90vw;
-  margin: 10vh;
+  margin: 5vh 10vh;
   display: flex;
   flex-direction: column;
 }
 
 /* Carrossel */
 
-.recommended {
+.banners {
+  width: 100%;
+  margin-top: 10vh;
+  padding: 20px 0;
+
   display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
-.recommended-now{
+.banners button {
   position: relative;
+  width: 5.1rem;
 
+  background: hsla(0, 0%, 0%, 0.397);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.btn-left img {
+  transform: rotate(90deg);
+}
+
+.btn-rigth img {
+  transform: rotate(270deg);
+}
+
+.recommended {
+  gap: 2rem;
 }
 
 .recommended-now img {
   width: 100%;
+  height: 100%;
   box-shadow: 0 1.5em 1.5em -0.8em #000
 }
 
 .recommended-logo {
   position: absolute;
-  top: 25%;
-  left: 5%;
+  top: 20%;
+  left: 10%;
 }
 .recommended-logo img {
   width: 25%;
@@ -182,17 +205,58 @@ main {
   font-size: 1.5rem;
 }
 
+.movies {
+  margin-left: 10vh ;
+
+}
+
+.movie {
+  margin-top: 0 4vh;
+  display: flex;
+  flex-direction: column; 
+  margin-right: 10vh;
+
+  
+}
+
+.movie h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .filmes {
   margin: 4vh 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 2rem;
   justify-content: space-between;
 
 }
 
-.logoBox2{
+.cards {
   position: relative;
+  display: flex;
+}
+
+.btn-card {
+  position: absolute;
+
+  width: 5vh;  
+  top: 0;
+  bottom: 0;
+  right: -10vh;
+  
+
+  background: hsla(0, 0%, 0%, 0.397);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-card img {
+  transform: rotate(270deg);
+}
+
+.logoBox2{
   background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
   border-radius: 8px;
   box-shadow: 0 1.5em 1.5em 0em #000;
@@ -206,14 +270,6 @@ main {
 
 }
 
-.logoBox2 .seta {
-  transform: rotate(270deg);
-}
-.logoBox2:last-child {
-  position: absolute;
-  right: -2%;
-  width: 5rem;
-}
 
 .logoBox2:hover {
   transform: scale(1.05);
