@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <header>
     <nav class="menu">
       <ul class="nav-links">
-        <img src="imgs/logo.png" alt="Logo Disney+" class="logo">
+        <div class="logo"></div>
         <li class="nav-itens">
           <a href="#">
             <img src="imgs/home.svg" alt="Início">
@@ -27,7 +29,7 @@
           <a href="#">
             <img src="imgs/search.svg" alt="Pesquisa">
             <p class="response">PESQUISA</p>
-            </a>
+          </a>
         </li>
         <li class="nav-itens">
           <a href="#">
@@ -57,211 +59,149 @@
           <a href="#">
             <img src="imgs/dotted.svg" alt="Filmes">
           </a>
-        </li>        
+        </li>
       </ul>
-      <div class="user">
+      <ul class="user">
+        <li>
         <a href="#">Usuário</a>
-        <img src="imgs/logo_user.png" alt="Usuário">
-        </div>
+        </li>
+        <li>
+        <div class="logo-user"></div>
+        </li>
+      </ul>
       </div>
     </nav>
 
   </header>
   <main>
-    <div class="banners">
-      <button type="submit" class="btn-left btn-carrossel">
-        <img src="imgs/seta.svg">
-      </button>
-      <div class="recommended">
-        <div class="recommended-now">
-          <a href="#" class="recommended-logo">
-            <img src="imgs/logo-xmen.png" alt="Logo X-Men">
-          </a>
-          <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C74B7ED7AF8E245A4F62DF240CDBD7A4E8FFFC1F6B30F7E5E5BD3F197B4F4384/compose?width=2880&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim" alt="filme atual">
-        </div>
-      </div>
-      <button type="submit" class="btn-rigth btn-carrossel">
-        <img src="imgs/seta.svg">
-      </button>
-    </div>      
     <div class="page">
+
+      <div class="banners">
+          <button class="btn-left btn-carrossel">
+            <img src="imgs/seta.svg">
+          </button>
+          <div class="recommended">
+            <div class="recommended-now">
+              <a href="#" class="recommended-logo">
+                <img src="imgs/logo-xmen.png" alt="Logo X-Men">
+              </a>
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C74B7ED7AF8E245A4F62DF240CDBD7A4E8FFFC1F6B30F7E5E5BD3F197B4F4384/compose?width=2880&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim"
+                alt="filme atual">
+            </div>
+          </div>
+          <button class="btn-rigth btn-carrossel">
+            <img src="imgs/seta.svg">
+          </button>
+      </div>
+
+
       <div class="logos">
         <div class="logoBox">
-          <a href=""></a>
             <img src="imgs/logo_disney.png" alt="Logo Disney">
-          </a>
         </div>
-    
+  
         <div class="logoBox">
-          <a href="">
             <img src="imgs/logo_pixar.png" alt="Logo Pixar">
-          </a>
         </div>
-    
+  
         <div class="logoBox">
-          <a href="">
             <img src="imgs/logo_marvel.png" alt="Loo Marvel">
-          </a>
         </div>
-    
+  
         <div class="logoBox">
-          <a href="">
             <img src="imgs/logo_starwars.png" alt="Star Wars">
-          </a>
         </div>
-        
+  
         <div class="logoBox">
-          <a href="">
             <img src="imgs/logo_natgeo.png" alt="National Geographic">
-          </a>
         </div>
       </div>
-
+  
+      <div class="collections">
+  
+        <div class="cards">
+          <div class="cards-container">
+            <h4>Novidades no Disney+</h4>
+  
+            <div class="cards-movies">
+              <div class="movies">
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+      
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CD978C367F593CB7EF63D3E22D4E900E291EC8D29EBEAFDB09F582AEBE3C97C9/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="Logo Pixar">
+                  </div>
+      
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35C6AF520BABC124DDC8B6A55EAAE5328AC812EBB1EE536DD8FDCD675146EFD2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                      alt="Loo Marvel">
+                  </div>
+      
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/412E6F58FD4A6238CBA1E8FF5BF7BC067DA29C4F63B0A0C40F6408923AF2C30D/badging?width=400&aspectRatio=1.78&format=jpeg&label=staroriginal"
+                      alt="Star Wars">
+                  </div>
+      
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/258469018F2D0A15079D859396BA909D95E605EAC6B65A580C6AD88CC7D353E8/scale?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="National Geographic">
+                  </div>
+                  
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                      alt="">
+                  </div>
+              </div> 
+              <button class="btn-card">
+                <img src="imgs/seta.svg">
+              </button>
+            </div>
+  
+          </div>
+  
+        </div>      
+  
+  
+  
+      </div>
     </div>
-    <div class="movies">
 
-      <div class="movie">
-      <h4>Novidades no Disney+</h4>
-      <div class="cards">
-        <div class="filmes">
-          
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="">
-              </a>
-            </div>
-      
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CD978C367F593CB7EF63D3E22D4E900E291EC8D29EBEAFDB09F582AEBE3C97C9/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="Logo Pixar">
-              </a>
-            </div>
-      
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35C6AF520BABC124DDC8B6A55EAAE5328AC812EBB1EE536DD8FDCD675146EFD2/scale?width=400&aspectRatio=1.78&format=jpeg" alt="Loo Marvel">
-              </a>
-            </div>
-      
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/412E6F58FD4A6238CBA1E8FF5BF7BC067DA29C4F63B0A0C40F6408923AF2C30D/badging?width=400&aspectRatio=1.78&format=jpeg&label=staroriginal" alt="Star Wars">
-              </a>
-            </div>
-            
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/258469018F2D0A15079D859396BA909D95E605EAC6B65A580C6AD88CC7D353E8/scale?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="National Geographic">
-              </a>
-            </div> 
-
-            <div class="logoBox2">
-              <a href="">
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/258469018F2D0A15079D859396BA909D95E605EAC6B65A580C6AD88CC7D353E8/scale?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="National Geographic">
-              </a>
-            </div> 
-
-            <button class="btn-card">
-              <img src="imgs/seta.svg" alt="">
-            </button>
-       </div>
-      </div>
-      
-      </div>
-
-      <div class="movie">
-        <h4>Novidades no Disney+</h4>
-        <div class="cards">
-          <div class="filmes">
-            
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CD978C367F593CB7EF63D3E22D4E900E291EC8D29EBEAFDB09F582AEBE3C97C9/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="Logo Pixar">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35C6AF520BABC124DDC8B6A55EAAE5328AC812EBB1EE536DD8FDCD675146EFD2/scale?width=400&aspectRatio=1.78&format=jpeg" alt="Loo Marvel">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/412E6F58FD4A6238CBA1E8FF5BF7BC067DA29C4F63B0A0C40F6408923AF2C30D/badging?width=400&aspectRatio=1.78&format=jpeg&label=staroriginal" alt="Star Wars">
-                </a>
-              </div>
-              
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/258469018F2D0A15079D859396BA909D95E605EAC6B65A580C6AD88CC7D353E8/scale?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="National Geographic">
-                </a>
-              </div> 
-  
-              <button type="submit" class="btn-card">
-                <img src="imgs/seta.svg" alt="">
-              </button>
-         </div>
-        </div>
-        
-      </div>
-
-      <div class="movie">
-        <h4>Novidades no Disney+</h4>
-        <div class="cards">
-          <div class="filmes">
-            
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD2121188DE5D297E2C433E94F14291636670A3428405C6A49F372B8F2D24ACE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CD978C367F593CB7EF63D3E22D4E900E291EC8D29EBEAFDB09F582AEBE3C97C9/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="Logo Pixar">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35C6AF520BABC124DDC8B6A55EAAE5328AC812EBB1EE536DD8FDCD675146EFD2/scale?width=400&aspectRatio=1.78&format=jpeg" alt="Loo Marvel">
-                </a>
-              </div>
-        
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/412E6F58FD4A6238CBA1E8FF5BF7BC067DA29C4F63B0A0C40F6408923AF2C30D/badging?width=400&aspectRatio=1.78&format=jpeg&label=staroriginal" alt="Star Wars">
-                </a>
-              </div>
-              
-              <div class="logoBox2">
-                <a href="">
-                  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/258469018F2D0A15079D859396BA909D95E605EAC6B65A580C6AD88CC7D353E8/scale?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal" alt="National Geographic">
-                </a>
-              </div> 
-  
-              <button type="submit" class="btn-card">
-                <img src="imgs/seta.svg" alt="">
-              </button>
-         </div>
-        </div>
-        
-      </div>
-        
-    </div>     
 
 
   </main>
   <footer>
     <div class="footer-logo">
-      <img src="imgs/logo.png" alt="Logo Disney+" class="logo">
+      <div class="logo"></div>
     </div>
     <div class="footer-content">
       <button>Política de Privacidade</button>
@@ -274,13 +214,16 @@
       <button>Sobre o Disney+</button>
       <button>Anúncios personalizados</button>
       <div class="footer-metadata">
-        <p>Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
+        <p>Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
+          comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551,
+          12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
       </div>
     </div>
     <div class="footer-direitos">
       <p>Disney. Todos os direitos reservados.</p>
     </div>
   </footer>
-  
+
 </body>
+
 </html>

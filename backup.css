@@ -12,11 +12,13 @@ body {
   font-family: "Sen", sans-serif;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 header {
   display: flex;
+  position: absolute;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -35,8 +37,14 @@ header {
 }
 
 .logo {
-  width: 86px;
-  height: 48px;
+  background-color: transparent;
+  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/disney-plus-logo-white-update.f384bde4d5a7f1f455e2dc7d8d4348ae.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+  min-height: 38px;
+  min-width: 68px;
+  width: auto;
 }
 
 .menu ul {
@@ -44,7 +52,7 @@ header {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  gap: 15px;
+  gap: 10px;
 }
 
 .menu li {
@@ -53,7 +61,8 @@ header {
 }
 
  .nav-itens a {
-  padding: 0 36PX;
+  padding: 16px 12px;
+  
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -85,9 +94,16 @@ header {
   padding: 0 20px;
 }
 
-.user  img{
-  width: 48px;
-  height: 48px;
+.logo-user {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  background: url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BD2FA0F3965617FC515E3CEBD3AD51C00CCFFBF98F96448EFE46B82867FCE542/scale?width=96&format=png") 0% 0% / contain no-repeat;
+  border-radius: 50%;
+  margin: auto;
+  transition: all 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
 }
 
 .user a {
@@ -98,44 +114,99 @@ header {
 
 /* Corpo da página */
 
-main {
-  padding: 0 0 0 20px;
-}
-
 .page {
   max-width: 90vw;
-  margin: 10vh;
+  margin: 5vh 10vh 0 10vh;
   display: flex;
   flex-direction: column;
 }
 
 /* Carrossel */
 
-.carousel {
-  max-width: 100%;
+.banners {
+  width: 100%;
+  margin-top: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.banners button {
+  position: relative;
+  width: 5.1rem;
+
+  background: hsla(0, 0%, 0%, 0.397);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 1.5em 1.5em -0.8em #000
+}
+
+.btn-carrossel:hover img {
+  opacity: 1;
+}
+
+.btn-left {
+  margin-right: 20px;
+}
+
+.btn-rigth {
+  margin-left: 20px;
+}
+
+.btn-left img {
+  transform: rotate(90deg);
+}
+
+.btn-rigth img {
+  transform: rotate(270deg);
+}
+
+:is(.btn-left, .btn-rigth) img {
+  opacity: 0;
+  transition: opacity 0.1s;
 }
 
 .recommended {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  gap: 2vh;
+  gap: 2rem;
+}
+
+.recommended-now {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .recommended-now img {
   width: 100%;
   height: 100%;
+
+  object-fit: cover;
+
   box-shadow: 0 1.5em 1.5em -0.8em #000
+}
+
+.recommended-logo {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.recommended-logo img {
+  animation: leftsmooth 700ms;
+
+  width: 25%;
+  height: 25%;
 }
 
 /* Logos */
 
 .logos {
-  margin-top: 4vh ;
+  margin: 1.9rem 0;
   display: flex;
-  justify-content: space-between;
-  gap: 2vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  
 }
 
 .logoBox{
@@ -160,9 +231,9 @@ main {
 /* Novidades */
 
 .news {
-  margin-top: 4vh;
+  margin-top: 0 4vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   
 }
 
@@ -171,57 +242,69 @@ main {
   font-size: 1.5rem;
 }
 
+.movies {
+  margin-left: 10vh ;
 
-.news .filmes {
-  position: relative;
 }
 
-.news .filmes::after {
-  position: absolute;
-  right: 0;
+.movie {
+  margin-top: 0 4vh;
+  display: flex;
+  flex-direction: column; 
+  margin-right: 10vh;
 
-  display: grid;
-  place-content: center;
-
-  content: ">";
-
-  width: clamp(5%, 75px, 15%);
-  height: 100%;
   
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), black);
-  /* opacity: 0; */
-
-
-  color: white;
-  font-size: 35px;
 }
 
-.news .filmes::after :hover {
-  opacity: 1;
-  cursor: pointer;
+.movie h4 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 5vh;
+  margin-bottom: 5px;
 }
 
 .filmes {
-  margin-top: 4vh;
+
   display: flex;
-  justify-content: space-around;
-  gap: 18px;
+  gap: 2rem;
+  justify-content: space-between;
 
 }
 
-.logoBox2{
+.cards {
   position: relative;
+  display: flex;
+}
+
+.btn-card {
+  position: absolute;
+
+  bottom: 10%;
+
+  background: hsla(0, 0%, 0%, 0.397);
+  border-radius: 8px 0 0 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-card img {
+  transform: rotate(270deg);
+}
+
+.logoBox2{
   background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
   border-radius: 8px;
   box-shadow: 0 1.5em 1.5em 0em #000;
 }
 
+
 .logoBox2 img {
-  width: 324px;
-  height: 186px;
+  width: 100;
+  height: 100%;
   border-radius: 8px;
 
 }
+
 
 .logoBox2:hover {
   transform: scale(1.05);
@@ -236,6 +319,7 @@ main {
 /* Rodapé */
 
 footer {
+  position: relative;
   background-color: #0e0b14;
   width: 100%;
   display: flex;
@@ -295,6 +379,18 @@ footer {
 
 }
 
+@keyframes leftsmooth {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width:1550px) {
   .response {
     display: none;
@@ -304,6 +400,9 @@ footer {
   }
 }
 
-.movies {
-  margin-left: 10vh;
+@media (max-width:620px) {
+  .user a {
+    display: none;
+  }
+
 }
