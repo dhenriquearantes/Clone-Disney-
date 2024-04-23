@@ -16,6 +16,8 @@ body {
 }
 
 header {
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,6 +33,7 @@ main {
 /* Menu */
 
 .menu {
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,6 +95,7 @@ main {
 /* Usuário */
 
 .user {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -123,22 +127,19 @@ main {
 /* Corpo da página */
 
 .page {
-  margin: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  padding: 0 calc(3.5vw + 24px);
+  padding: 0 calc(3.5vw + 6px);
 }
 
 /* Carrossel */
 
 .banners {
-  width: 100%;
-
-
+  display: flex;
+  margin-top: 10px;
+  
 }
 
 
-.banners button, .cards button {
+.banners button {
 
   background: hsla(0, 0%, 0%, 0.397);
   border: none;
@@ -152,26 +153,26 @@ main {
 }
 
 .btn-left {
-
-  bottom: 0;
-  left: 0;
-
   width: 100px;
+  margin-right: 10px;
+
 }
 
-.btn-rigth {
-  margin-left: 20px;
+.btn-right {
+  width: 100px;
+  margin-left: 10px;
 }
 
 .btn-left img {
   transform: rotate(90deg);
 }
 
-.btn-rigth img {
+.btn-right img {
   transform: rotate(270deg);
 }
 
-:is(.btn-left, .btn-rigth) img {
+:is(.btn-left, .btn-right 
+) img {
   opacity: 0;
   transition: opacity 0.1s;
 }
@@ -246,27 +247,30 @@ main {
 
 .cards {
   display: flex;
+  flex-direction: column;
 }
 
 .cards h4 {
-  margin: 4vh 0;
+  margin: 4vh 0 2px 0;
 
   color: white;
   font-size: 1.5rem;
 }
 
 .cards-container{
+  position: relative;
   display: flex;
 }
 
 .cards-movies {
   display: flex;
-  position: relative;
 }
 
 .movies {
   display: flex;
+  margin-bottom: 1.5rem;
   width: 5450px;
+  height: 100%;
   opacity: 1;
 }
 
@@ -295,10 +299,11 @@ main {
 
 .btn-card {
   position: absolute;
-  right: -120px;
-  top: 10px;
-  width: 100px;
-  height: 90%;
+
+  width: 40px;
+  height: 40px;
+  right: 10;
+  top: 40%;
 
 }
 .btn-card img {
@@ -312,12 +317,10 @@ main {
 
 .cards button {
 
-  background: hsla(0, 0%, 0%, 0.397);
+  background: transparent;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 1.5em 1.5em -0.8em #000
 }
 
 
@@ -330,11 +333,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
-.footer-logo {
-  margin-top: 20px;
+.footer-logo, .logo {
+  margin-top: 5px;
+  height: 48px;
+  width: 86;
 }
 
 .footer-content {
@@ -396,7 +401,105 @@ footer {
   }
 }
 
-@media (max-width:1550px) {
+
+@media (max-width:425px) {
+  .card {
+    width: 179px;
+  }
+  .btn-card {
+    position: absolute;
+    right: -20px;
+    top: 120px;
+    bottom: 0;
+  
+  }
+
+}
+
+@media (max-width:620px) {
+  .user a {
+    display: none;
+  }
+  .card {
+    width: 275px;
+  }
+  .btn-card {
+    position: absolute;
+    right: -20px;
+    top: 135px;
+    bottom: 0;
+  
+  }
+
+}
+
+
+
+@media (min-width:768px) {
+  .card {
+    width: 343px;
+  }
+  .btn-card {
+    position: absolute;
+    right: -40px;
+    top: 140px;
+    bottom: 0;
+  
+  }
+
+}
+
+@media (min-width:1024px) {
+  .card {
+    width: 308px;
+  }
+  .btn-card {
+    position: absolute;
+    right: -50px;
+    top: 130px;
+    bottom: 0;
+  
+  }
+
+}
+
+@media (min-width:1440px) {
+  .card {
+    width: 263px;
+  }
+  .btn-card {
+    position: absolute;
+    right: 10;
+    top: 50%;
+    bottom: 0;
+  
+  }
+
+}
+
+@media (min-width:1912px) {
+  .card {
+    width: 347px;
+  }
+  
+}
+
+@media (min-width:2560px) {
+  .card {
+    width: 347px;
+  }
+  .btn-card {
+    position: absolute;
+    right: -105px;
+    top: 165px;
+    bottom: 0;
+
+  
+  }
+
+}
+
+@media (max-width:1100px) {
   .response {
     display: none;
   }
@@ -405,32 +508,7 @@ footer {
   }
 }
 
-@media (max-width:620px) {
-  .user a {
-    display: none;
-  }
 
-}
 
-@media (max-width:415px) {
-  .card {
-    width: 179px;
-  }
 
-}
-
-@media (max-width:1280px) {
-  .card {
-    width: 291px;
-  }
-
-}
-
-@media (max-width:1920px) {
-
-  .logoBox2 img {
-    width: 22rem;
-  }
-
-}
 
